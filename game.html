@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQueryGame</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link href="css/game.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script/game.js"></script>
+  </head>
+  <body>
+    <div id="nav">
+      <label class="timer"> Timer: </label>
+      <div class="countdown">30</div>
+      <label class="scorelabel"> Score: </label>
+      <div class="score">0</div>
+      <label class="levelLabel"> level: </label>
+      <div class="level">1</div>
+    </div>
+    <hr />
+    <div class="dragable">
+      <table>
+        <tr class="row1"></tr>
+      </table>
+    </div>
+    <div class="mid">
+      <table>
+        <tr>
+          <td>
+            <img
+              src="./images/arrowdown.gif"
+              class="arrowdown"
+              id="midrow"
+              alt="gif not available"
+              width="200px"
+              height="200px"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="undragable">
+      <table>
+        <tr class="row3"></tr>
+      </table>
+    </div>
+    <div id="audio">
+      <audio id="correct" src="./script/correct.mp3" type="audio/mpeg"></audio>
+      <audio id="wrong" src="./script/wrong.mp3" type="audio/mpeg"></audio>
+    </div>
+  </body>
+</html>
